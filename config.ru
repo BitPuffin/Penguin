@@ -12,6 +12,6 @@ map '/blog' do
 	run Blog
 end
 
-map 'admin' do
+map '/admin' do
 	run Admin
 end
