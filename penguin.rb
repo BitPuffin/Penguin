@@ -7,8 +7,12 @@ require 'rack/csrf'
 require_relative 'penguin/controllers'
 require_relative 'penguin/views'
 
-module Penguin
-	setup(self)
+def Penguin.setup(app)
+	app.module_eval do
+		use Rack::Csrf
+		include Camping::Session
+		include Penguin::Helpers
+	end
 end
 
 module Penguin::Helpers
@@ -21,10 +25,6 @@ module Penguin::Helpers
 	end
 end
 
-def Penguin.setup(app)
-	app.module_eval do
-		use Rack::Csrf
-		include Camping::Session
-		include Penguin::Helpers
-	end
+module Penguin
+	setup(self)
 end
