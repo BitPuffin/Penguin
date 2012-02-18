@@ -18,4 +18,5 @@ module Penguin::Views
 		p "prutt!"
 		a "blog", :href => '/blog'
 	end
+	
 end
