@@ -8,8 +8,7 @@ require_relative 'penguin/controllers'
 require_relative 'penguin/views'
 
 module Penguin
-	use Rack::Csrf
-	include Camping::Session
+	setup(self)
 end
 
 module Penguin::Helpers
@@ -19,5 +18,13 @@ module Penguin::Helpers
 			self << Rack::Csrf.tag(@env)
 			yield
 		end
+	end
+end
+
+def Penguin.setup(app)
+	app.module_eval do
+		use Rack::Csrf
+		include Camping::Session
+		include Penguin::Helpers
 	end
 end
