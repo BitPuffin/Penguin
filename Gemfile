@@ -5,6 +5,9 @@ gem 'camping', :git => 'http://github.com/camping/camping'
 # Encryption!
 gem 'scrypt'
 
+# csrf protection!
+gem 'rack_csrf'
+
 # Web server
 gem 'unicorn'
 
