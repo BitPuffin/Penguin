@@ -4,8 +4,8 @@ require 'camping'
 require 'camping/session'
 require 'rack/csrf'
 
-require_relative 'penguin/controllers'
-require_relative 'penguin/views'
+require_relative 'apps/penguin/controllers'
+require_relative 'apps/penguin/views'
 
 def Penguin.setup(app)
 	app.module_eval do

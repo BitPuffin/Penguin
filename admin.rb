@@ -1,7 +1,7 @@
 Camping.goes :Admin
 
-require_relative 'admin/controllers'
-require_relative 'admin/views'
+require_relative 'apps/admin/controllers'
+require_relative 'apps/admin/views'
 require_relative 'penguin'
 
 module Admin
