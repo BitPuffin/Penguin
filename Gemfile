@@ -1,6 +1,6 @@
-source 'https://rubygems.org/'
+source :rubygems
 
-gem 'camping', :git => 'git://github.com/camping/camping.git'
+gem 'camping', :git => 'http://github.com/camping/camping'
 
 # Encryption!
 gem 'scrypt'

@@ -2,6 +2,8 @@ require 'penguin'
 require 'blog'
 require 'admin'
 
+$LOAD_PATH << './'
+
 map '/' do
 	run Penguin
 end
