@@ -1,7 +1,7 @@
 module Penguin::Controllers
 	class Index
 		def get
-			"Lol!"
+			render :index
 		end
 	end
 end
