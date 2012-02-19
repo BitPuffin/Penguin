@@ -19,9 +19,10 @@ Copyright &copy; Isak Andersson, licensed under the terms of the Zlib license.
 Check the file called License for details.
 
 TLDR version of the license (even though it's short):
->	You can do what ever you want with the code as long as you don't remove the
->	License. And the fact that I wrote the original must not be misrepresented.
->	Also, some credit is nice.
+
+*You can do what ever you want with the code as long as you don't remove the
+License. And the fact that I wrote the original must not be misrepresented.
+Also, some credit is nice.*
 
 -------------------------------------------------------------------------------
 
