@@ -18,6 +18,7 @@ This website is powered by *Camping* and *Riak*.
 Copyright &copy; Isak Andersson, licensed under the terms of the Zlib license. 
 Check the file called License for details.
 
+-------------------------------------------------------------------------------
 
 Deployment instructions
 -----------------------
